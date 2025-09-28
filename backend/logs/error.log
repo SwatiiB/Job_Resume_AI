@@ -1,0 +1,82 @@
+{
+  service: 'resume-refresh-backend',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (E:\\Resume_Project\\backend\\src\\services\\emailService.js:19:37)\n' +
+    '    at new EmailService (E:\\Resume_Project\\backend\\src\\services\\emailService.js:10:10)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\src\\services\\emailService.js:399:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)',
+  timestamp: '2025-09-18 17:42:26'
+}
+{
+  service: 'resume-refresh-backend',
+  level: 'error',
+  message: 'Failed to initialize email transporter: nodemailer.createTransporter is not a function',
+  stack: 'TypeError: nodemailer.createTransporter is not a function\n' +
+    '    at EmailService.initializeTransporter (E:\\Resume_Project\\backend\\src\\services\\emailService.js:19:37)\n' +
+    '    at new EmailService (E:\\Resume_Project\\backend\\src\\services\\emailService.js:10:10)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\src\\services\\emailService.js:399:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)',
+  timestamp: '2025-09-18 17:46:10'
+}
+{
+  message: 'GEMINI_API_KEY not found in environment variables',
+  level: 'error',
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:18:41'
+}
+{
+  message: 'GEMINI_API_KEY not found in environment variables',
+  level: 'error',
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:19:09'
+}
+{
+  message: 'GEMINI_API_KEY not found in environment variables',
+  level: 'error',
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:20:02'
+}
+{
+  message: 'GEMINI_API_KEY not found in environment variables',
+  level: 'error',
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:20:02'
+}
+{
+  message: 'GEMINI_API_KEY not found in environment variables',
+  level: 'error',
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:20:17'
+}
+{
+  message: 'GEMINI_API_KEY not found in environment variables',
+  level: 'error',
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:20:17'
+}
+{
+  message: 'GEMINI_API_KEY not found in environment variables',
+  level: 'error',
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:21:22'
+}
+{
+  message: 'GEMINI_API_KEY not found in environment variables',
+  level: 'error',
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:21:22'
+}

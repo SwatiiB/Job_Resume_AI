@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Registration Form Test Results</h1>
+    
+    <div class="test-section">
+        <h2>✅ Issue Fixed: File Input Overlap</h2>
+        <div class="success">
+            <strong>Problem:</strong> File input with <code>absolute inset-0</code> positioning was covering the entire form, preventing interaction with other fields.
+        </div>
+        <div class="success">
+            <strong>Solution:</strong> Added <code>relative</code> positioning to the parent container to properly scope the absolute positioning of the file input.
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>✅ Issue Fixed: Undefined CSS Classes</h2>
+        <div class="success">
+            <strong>Problem:</strong> Several input fields were using undefined CSS classes like <code>input</code>, <code>btn</code>, <code>input-error</code>.
+        </div>
+        <div class="success">
+            <strong>Solution:</strong> Replaced all undefined classes with proper TailwindCSS classes:
+            <ul>
+                <li><code>input</code> → <code>block w-full px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors</code></li>
+                <li><code>btn btn-secondary btn-sm</code> → <code>px-3 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center</code></li>
+                <li><code>input-error</code> → <code>border-red-300 focus:ring-red-500 focus:border-red-500</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🎯 Test Instructions</h2>
+        <div class="info">
+            <strong>To test the registration form:</strong>
+            <ol>
+                <li>Navigate to <a href="http://localhost:3000/auth/register" target="_blank">http://localhost:3000/auth/register</a></li>
+                <li>Try selecting different roles (Job Seeker/Recruiter)</li>
+                <li>Fill in the form fields:
+                    <ul>
+                        <li>First Name</li>
+                        <li>Last Name</li>
+                        <li>Email Address</li>
+                        <li>Password</li>
+                        <li>Confirm Password</li>
+                    </ul>
+                </li>
+                <li>For Job Seeker role, try:
+                    <ul>
+                        <li>Adding skills</li>
+                        <li>Uploading a resume file</li>
+                        <li>Filling location fields</li>
+                    </ul>
+                </li>
+                <li>For Recruiter role, try:
+                    <ul>
+                        <li>Filling company information</li>
+                        <li>Adding contact details</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔧 Technical Changes Made</h2>
+        <pre>
+1. Fixed file input positioning:
+   - Added 'relative' class to parent container
+   - File input now properly scoped to upload area only
+
+2. Replaced undefined CSS classes:
+   - All 'input' classes → Full TailwindCSS input styling
+   - All 'btn' classes → Proper button styling
+   - All 'input-error' classes → Error state styling
+
+3. Maintained functionality:
+   - Form validation still works
+   - Role-based field switching still works
+   - File upload still works (but only in upload area)
+   - All animations and interactions preserved
+        </pre>
+    </div>
+
+    <div class="test-section">
+        <h2>✅ Expected Results</h2>
+        <div class="success">
+            <strong>You should now be able to:</strong>
+            <ul>
+                <li>✅ Select Job Seeker or Recruiter role without issues</li>
+                <li>✅ Click and type in First Name field</li>
+                <li>✅ Click and type in Last Name field</li>
+                <li>✅ Click and type in Email field</li>
+                <li>✅ Click and type in Password fields</li>
+                <li>✅ Use all role-specific fields without file manager opening</li>
+                <li>✅ Upload resume files by clicking in the upload area only</li>
+                <li>✅ See proper styling on all form elements</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🚀 Ready to Test!</h2>
+        <div class="info">
+            <strong>Both servers are running:</strong>
+            <ul>
+                <li>Frontend: <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></li>
+                <li>Backend: <a href="http://localhost:5000/health" target="_blank">http://localhost:5000/health</a></li>
+            </ul>
+            <p>Visit the registration page and test all the form interactions!</p>
+        </div>
+    </div>
+
+    <script>
+        // Simple test to verify the page loads
+        console.log('✅ Registration form test page loaded successfully!');
+        console.log('🎯 Ready to test the fixed registration form at http://localhost:3000/auth/register');
+    </script>
+</body>
+</html>
+

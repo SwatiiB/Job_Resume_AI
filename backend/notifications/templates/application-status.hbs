@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Status Update</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+        }
+        .header.pending { background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%); }
+        .header.reviewing { background: linear-gradient(135deg, #17a2b8 0%, #007bff 100%); }
+        .header.shortlisted { background: linear-gradient(135deg, #28a745 0%, #20c997 100%); }
+        .header.interviewed { background: linear-gradient(135deg, #6f42c1 0%, #e83e8c 100%); }
+        .header.offered { background: linear-gradient(135deg, #28a745 0%, #20c997 100%); }
+        .header.hired { background: linear-gradient(135deg, #28a745 0%, #20c997 100%); }
+        .header.rejected { background: linear-gradient(135deg, #dc3545 0%, #c82333 100%); }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .status-card {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 25px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+        .status-card.pending { border-left-color: #ffc107; }
+        .status-card.reviewing { border-left-color: #17a2b8; }
+        .status-card.shortlisted { border-left-color: #28a745; }
+        .status-card.interviewed { border-left-color: #6f42c1; }
+        .status-card.offered { border-left-color: #28a745; }
+        .status-card.hired { border-left-color: #28a745; }
+        .status-card.rejected { border-left-color: #dc3545; }
+        
+        .job-info {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 15px;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+        }
+        .job-icon {
+            font-size: 48px;
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 12px;
+        }
+        .job-details h3 {
+            margin: 0 0 5px 0;
+            font-size: 20px;
+            color: #212529;
+        }
+        .job-details p {
+            margin: 0;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .timeline {
+            margin: 30px 0;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .timeline-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+        .timeline-icon.completed {
+            background: #28a745;
+            color: white;
+        }
+        .timeline-icon.current {
+            background: #007bff;
+            color: white;
+        }
+        .timeline-icon.pending {
+            background: #e9ecef;
+            color: #6c757d;
+        }
+        .next-steps {
+            background: #e7f3ff;
+            border: 2px solid #b3d7ff;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        .steps-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        .steps-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+            position: relative;
+            padding-left: 30px;
+        }
+        .steps-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .cta-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #dee2e6;
+        }
+        .footer p {
+            margin: 5px 0;
+            color: #6c757d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header {{status}}">
+            <h1>Application Status Update</h1>
+            <p>{{statusMessage}}</p>
+        </div>
+        
+        <div class="content">
+            <h2>Hi {{firstName}},</h2>
+            
+            <p>We have an update regarding your job application:</p>
+            
+            <div class="job-info">
+                <div class="job-icon">💼</div>
+                <div class="job-details">
+                    <h3>{{jobTitle}}</h3>
+                    <p><strong>{{companyName}}</strong></p>
+                    <p>Application Status: <strong>{{capitalize status}}</strong></p>
+                </div>
+            </div>
+            
+            <div class="status-card {{status}}">
+                {{#ifEquals status "pending"}}
+                <h4>⏳ Application Under Review</h4>
+                <p>Your application has been received and is currently being reviewed by the hiring team. We'll keep you updated as the process progresses.</p>
+                {{/ifEquals}}
+                
+                {{#ifEquals status "reviewing"}}
+                <h4>👀 Application Being Reviewed</h4>
+                <p>Great news! Your application has caught the attention of the hiring team and is currently under detailed review.</p>
+                {{/ifEquals}}
+                
+                {{#ifEquals status "shortlisted"}}
+                <h4>🌟 Congratulations! You've Been Shortlisted</h4>
+                <p>Excellent news! You've been selected as one of the top candidates for this position. The hiring team will be in touch soon to discuss next steps.</p>
+                {{/ifEquals}}
+                
+                {{#ifEquals status "interviewed"}}
+                <h4>🎤 Interview Completed</h4>
+                <p>Thank you for taking the time to interview with us. The hiring team is now reviewing all candidates and will make a decision soon.</p>
+                {{/ifEquals}}
+                
+                {{#ifEquals status "offered"}}
+                <h4>🎉 Congratulations! Job Offer Extended</h4>
+                <p>We're thrilled to extend you an offer for this position! Please review the offer details and respond by the specified deadline.</p>
+                {{/ifEquals}}
+                
+                {{#ifEquals status "hired"}}
+                <h4>🎊 Welcome to the Team!</h4>
+                <p>Congratulations! We're excited to welcome you to the team. You'll receive onboarding information shortly.</p>
+                {{/ifEquals}}
+                
+                {{#ifEquals status "rejected"}}
+                <h4>Thank You for Your Interest</h4>
+                <p>While we've decided to move forward with other candidates for this particular role, we were impressed by your qualifications and encourage you to apply for future opportunities.</p>
+                {{/ifEquals}}
+            </div>
+            
+            {{#if nextSteps}}
+            <div class="next-steps">
+                <h3>📋 Next Steps</h3>
+                <ul class="steps-list">
+                    {{#each nextSteps}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/if}}
+            
+            <div class="timeline">
+                <h3>📅 Application Timeline</h3>
+                <div class="timeline-item">
+                    <div class="timeline-icon completed">✓</div>
+                    <div>
+                        <strong>Application Submitted</strong>
+                        <p>Your application was successfully submitted</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon {{#ifEquals status 'pending'}}current{{else}}completed{{/ifEquals}}">👀</div>
+                    <div>
+                        <strong>Under Review</strong>
+                        <p>Application is being reviewed by hiring team</p>
+                    </div>
+                </div>
+                
+                {{#if (or (ifEquals status "shortlisted") (ifEquals status "interviewed") (ifEquals status "offered") (ifEquals status "hired"))}}
+                <div class="timeline-item">
+                    <div class="timeline-icon {{#ifEquals status 'shortlisted'}}current{{else}}completed{{/ifEquals}}">⭐</div>
+                    <div>
+                        <strong>Shortlisted</strong>
+                        <p>Selected as a top candidate</p>
+                    </div>
+                </div>
+                {{/if}}
+                
+                {{#if (or (ifEquals status "interviewed") (ifEquals status "offered") (ifEquals status "hired"))}}
+                <div class="timeline-item">
+                    <div class="timeline-icon {{#ifEquals status 'interviewed'}}current{{else}}completed{{/ifEquals}}">🎤</div>
+                    <div>
+                        <strong>Interview</strong>
+                        <p>Interview process completed</p>
+                    </div>
+                </div>
+                {{/if}}
+                
+                {{#if (or (ifEquals status "offered") (ifEquals status "hired"))}}
+                <div class="timeline-item">
+                    <div class="timeline-icon {{#ifEquals status 'offered'}}current{{else}}completed{{/ifEquals}}">🎉</div>
+                    <div>
+                        <strong>{{#ifEquals status "hired"}}Hired{{else}}Offer Extended{{/ifEquals}}</strong>
+                        <p>{{#ifEquals status "hired"}}Welcome to the team!{{else}}Job offer has been extended{{/ifEquals}}</p>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+            
+            <div class="cta-section">
+                <a href="{{applicationUrl}}" class="cta-button">View Application Details</a>
+                {{#ifEquals status "offered"}}
+                <a href="{{applicationUrl}}/offer" class="cta-button">Review Offer</a>
+                {{/ifEquals}}
+            </div>
+            
+            {{#ifEquals status "rejected"}}
+            <div style="background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 8px; padding: 20px; margin: 25px 0; color: #721c24;">
+                <h4>🚀 Keep Moving Forward</h4>
+                <p>Don't let this discourage you! Here are some ways to improve your chances:</p>
+                <ul>
+                    <li>Update your resume with our AI suggestions</li>
+                    <li>Apply to similar positions</li>
+                    <li>Enhance your skills based on market trends</li>
+                    <li>Network with professionals in your field</li>
+                </ul>
+            </div>
+            {{/ifEquals}}
+        </div>
+        
+        <div class="footer">
+            <p><strong>Resume Refresh Platform</strong></p>
+            <p>Supporting your career journey every step of the way</p>
+            <p>Need help? Contact us at <a href="mailto:{{supportEmail}}">{{supportEmail}}</a></p>
+            <p style="margin-top: 20px; font-size: 12px; color: #adb5bd;">
+                This is an automated update about your job application.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

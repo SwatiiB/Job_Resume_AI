@@ -1,0 +1,1430 @@
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 17:42:27 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 25604,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 145002496,
+      heapTotal: 97423360,
+      heapUsed: 59538144,
+      external: 20803493,
+      arrayBuffers: 18364855
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 689789.984 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 17:42:27'
+}
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 17:46:12 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 29108,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 144277504,
+      heapTotal: 97423360,
+      heapUsed: 60366808,
+      external: 20795301,
+      arrayBuffers: 18356663
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 690015.156 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 17:46:12'
+}
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 18:18:41 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 6064,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 144683008,
+      heapTotal: 97685504,
+      heapUsed: 59911384,
+      external: 20795301,
+      arrayBuffers: 18356663
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 691963.812 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:18:41'
+}
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 18:19:09 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 12272,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 144601088,
+      heapTotal: 98734080,
+      heapUsed: 60666944,
+      external: 20795301,
+      arrayBuffers: 18356663
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 691991.843 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:19:09'
+}
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 18:20:02 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 19260,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 144990208,
+      heapTotal: 97685504,
+      heapUsed: 60259720,
+      external: 20795301,
+      arrayBuffers: 18356663
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 692045.437 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:20:02'
+}
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 18:20:02 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24536,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 140926976,
+      heapTotal: 96374784,
+      heapUsed: 64799256,
+      external: 20795301,
+      arrayBuffers: 18356663
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 692045.437 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:20:02'
+}
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 18:20:17 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 22196,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 140976128,
+      heapTotal: 96636928,
+      heapUsed: 64600696,
+      external: 20795301,
+      arrayBuffers: 18356663
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 692060.265 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:20:17'
+}
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 18:20:17 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 30692,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 144297984,
+      heapTotal: 98209792,
+      heapUsed: 61658640,
+      external: 20795301,
+      arrayBuffers: 18356663
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 692060.265 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:20:17'
+}
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 18:21:22 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 30316,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 144867328,
+      heapTotal: 98996224,
+      heapUsed: 59885608,
+      external: 20795301,
+      arrayBuffers: 18356663
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 692124.906 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:21:22'
+}
+{
+  error: Error: Google Gemini API key is required
+      at new GeminiService (E:\Resume_Project\backend\ai-services\GeminiService.js:19:13)
+      at Object.<anonymous> (E:\Resume_Project\backend\ai-services\GeminiService.js:664:23)
+      at Module._compile (node:internal/modules/cjs/loader:1546:14)
+      at Object..js (node:internal/modules/cjs/loader:1689:10)
+      at Module.load (node:internal/modules/cjs/loader:1318:32)
+      at Function._load (node:internal/modules/cjs/loader:1128:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+      at Module.require (node:internal/modules/cjs/loader:1340:12)
+      at require (node:internal/modules/helpers:141:16),
+  level: 'error',
+  message: 'uncaughtException: Google Gemini API key is required\n' +
+    'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  stack: 'Error: Google Gemini API key is required\n' +
+    '    at new GeminiService (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:19:13)\n' +
+    '    at Object.<anonymous> (E:\\Resume_Project\\backend\\ai-services\\GeminiService.js:664:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1689:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1318:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1128:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1340:12)\n' +
+    '    at require (node:internal/modules/helpers:141:16)',
+  exception: true,
+  date: 'Thu Sep 18 2025 18:21:22 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 17824,
+    uid: null,
+    gid: null,
+    cwd: 'E:\\Resume_Project\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.11.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'E:\\Resume_Project\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 140763136,
+      heapTotal: 95064064,
+      heapUsed: 64572784,
+      external: 20795301,
+      arrayBuffers: 18356663
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 692124.906 },
+  trace: [
+    {
+      column: 13,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: 'new GeminiService',
+      line: 19,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'E:\\Resume_Project\\backend\\ai-services\\GeminiService.js',
+      function: null,
+      line: 664,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1546,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1689,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1318,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1128,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 315,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 218,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1340,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 141,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'resume-refresh-backend',
+  timestamp: '2025-09-18 18:21:22'
+}
